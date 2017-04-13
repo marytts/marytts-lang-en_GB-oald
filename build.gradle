@@ -1,2 +1,14 @@
+plugins {
+    id 'java'
+}
+
 group 'de.dfki.mary'
 version '5.2-SNAPSHOT'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    runtime group: 'de.dfki.mary', name: 'marytts-lang-en', version: '5.2'
+}
