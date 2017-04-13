@@ -7,8 +7,12 @@ version '5.2-SNAPSHOT'
 
 repositories {
     jcenter()
+    maven {
+        url 'https://oss.jfrog.org/artifactory/repo/'
+    }
 }
 
 dependencies {
     runtime group: 'de.dfki.mary', name: 'marytts-lang-en', version: '5.2'
+    runtime group: 'de.dfki.mary', name: 'marytts-lexicon-en_GB-oald', version: '0.1.0-SNAPSHOT'
 }
